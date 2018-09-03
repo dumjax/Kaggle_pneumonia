@@ -1,0 +1,8 @@
+pydicom
+pillow
+matplotlib
+keras
+jupyter
+pandas
+
+

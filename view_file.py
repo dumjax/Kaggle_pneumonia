@@ -5,11 +5,11 @@ import os
 import csv
 
 # folder name and image number
-dir = 'stage_1_train_images'
+dir = 'data/stage_1_train_images'
 img_nr = 91
 
 
-def get_bb_info(patient_name, bb_info_file_name = 'stage_1_train_labels.csv'):
+def get_bb_info(patient_name, bb_info_file_name = 'data/stage_1_train_labels.csv'):
     rv = []
     with open(bb_info_file_name) as f:
         data = csv.reader(f)
