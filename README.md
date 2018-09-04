@@ -12,7 +12,7 @@ https://brew.sh/
 
 brew install python3
 
-### Create virtualenvironment
+### Create virtualenvironment (if you know the exact python you want to use you can replace python3 by its complete path, for example usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7)
 
 virtualenv --system-site-packages -p python3 venv3
 
