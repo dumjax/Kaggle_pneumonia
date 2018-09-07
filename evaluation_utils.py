@@ -15,8 +15,8 @@ def iou(bb1, bb2):
 
 
 def score_patient(bbs_guess, bbs_truth_, threshold):
-    '''given two sets of boxes, calculate total intersection and union. Assume that the first list is ordered
-    by confidence'''
+    '''given two sets of boxes, calculate the score for a given threshold. 
+    Assume that the first list is ordered by (decreasing) confidence'''
 
     # trivial cases
     if len(bbs_truth_) == 0:
@@ -74,6 +74,7 @@ def read_truth_file(file_name):
 
 
 def score_submission(prediction_file, truth_file):
+    '''calculate the evaluation metric for a given submission file'''
     thresholds = [0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75]
 
     predictions = read_submission_file(prediction_file)
