@@ -1,8 +1,16 @@
 pydicom
+scipy
+cython
 pillow
 matplotlib
 keras
 jupyter
 pandas
+opencv-python
+imgaug
+tqdm
+h5py
+scikit-image
+IPython[all]
 
 
